@@ -1,4 +1,4 @@
 Integrante 1:
-Lucciano Franco :)
+Lucciano Franco
 Integrante 2:
-Lina Ojeda :)
+Lina Ojeda
