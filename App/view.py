@@ -23,6 +23,7 @@
  * Dario Correal - Version inicial
  """
 
+from controller import loadBooksTags
 import config as cf
 import sys
 import controller
@@ -43,6 +44,7 @@ def printMenu():
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TODO: Modificaciones para el laboratorio 1.
+    
     print("0- Salir")
 
 
@@ -59,6 +61,11 @@ def loadTags():
     """
     return controller.loadTags('GoodReads/tags.csv')
 
+def loadbooktags():
+    """
+    Carga el archivo
+    """
+    return controller.loadBooksTags('GoodReads/book_tags.csv')
 
 """
 Menu principal
@@ -77,7 +84,7 @@ while True:
         print('Total de tags cargados: ' + str(lt.size(tags)))
 
     # TODO: Modificaciones para el laboratorio 1.
-
+   
     else:
         sys.exit(0)
 sys.exit(0)
